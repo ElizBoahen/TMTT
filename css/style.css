@@ -1,0 +1,56 @@
+.mycontainer {
+	overflow: auto;
+}
+
+
+div {
+	margin: auto;
+
+}
+
+header {
+  background-color: #75B9BE;
+  font-family: Verdana;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+body {
+	font-family: Verdana;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+}
+section {
+	align-items: center;
+}
+#col-narrow-1 {
+	float: left;/**/
+	width: 20%;
+	padding: 1%;
+	margin: 0.5%;
+	color: #FFFFFF;
+	background-color: #046BE4;
+}
+
+#col-narrow-2 {
+	float: left;/**/
+	text-align: center;
+	width: 20%;
+	padding: 1%;
+	margin: 0.5%;
+	background-color: #52B771;
+}
+
+#col-narrow-3 {
+	float: left;/**/
+	text-align: center;
+	width: 20%;
+	padding: 1%;
+	margin: 0.5%;
+	background-color: #F7C13E;
+}
+
+
