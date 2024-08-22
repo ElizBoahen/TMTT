@@ -13,7 +13,7 @@ header {
   font-family: Verdana;
   padding: 10px;
   text-align: center;
-  font-size: 30px;
+  /*font-size: 30px;*/
   color: #FFFFFF;
 }
 
@@ -26,6 +26,16 @@ body {
 section {
 	align-items: center;
 }
+
+#col-narrow {
+	float: left;/**/
+	width: 20%;
+	padding: 1%;
+	margin: 0.5%;
+	color: #FFFFFF;
+	background-color: #75B9BE;
+}
+
 #col-narrow-1 {
 	float: left;/**/
 	width: 20%;
