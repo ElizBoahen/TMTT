@@ -2,10 +2,24 @@
 	overflow: auto;
 }
 
-
+/*-------- The Basics ----------*/
 div {
 	margin: auto;
+	font-family: Verdana;
+	padding: 5%;
+}
 
+/* Thank you StackOverflow & Andreas Wong*/
+a {
+	text-decoration: none;
+	color: white;
+}
+a:visited { text-decoration: none; color:none; }
+a:hover { text-decoration: none; color:blue; font-size:120%;}
+a:focus { text-decoration: none; color:yellow; }
+a:hover, a:active { text-decoration: none; color:blue }
+a.home {
+	color: blue;
 }
 
 header {
@@ -15,6 +29,7 @@ header {
   text-align: center;
   /*font-size: 30px;*/
   color: #FFFFFF;
+  text-shadow: 2px 2px 2px #6C6C6C;
 }
 
 body {
@@ -27,39 +42,114 @@ section {
 	align-items: center;
 }
 
-#col-narrow {
-	float: left;/**/
-	width: 20%;
-	padding: 1%;
-	margin: 0.5%;
-	color: #FFFFFF;
-	background-color: #75B9BE;
+#new-grid{
+	overflow: auto;
+	display: grid;
+	grid-template-columns: 20% 20% 20%;
 }
 
-#col-narrow-1 {
-	float: left;/**/
-	width: 20%;
-	padding: 1%;
+#offer-cell-1{
+	float: left;
+	padding: 10px;
 	margin: 0.5%;
 	color: #FFFFFF;
+	text-shadow: 2px 2px 15px #6C6C6C;
+	background-color: #A8CCC9;
+}
+#offer-cell-2{
+	float: left;
+	padding: 10px;
+	margin: 0.5%;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 15px #6C6C6C;
+	background-color: #A9DBB8;
+}
+#offer-cell-3{
+	float: left;
+	padding: 10px;
+	margin: 0.5%;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 15px #6C6C6C;
+	background-color: #52B771;
+}
+#offer-cell-4{
+	float: left;
+	padding: 10px;
+	margin: 0.5%;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 15px #6C6C6C;
+	background-color: #F7C13E;
+}
+#offer-cell-5{
+	float: left;
+	padding: 10px;
+	margin: 0.5%;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 15px #6C6C6C;
 	background-color: #046BE4;
 }
 
-#col-narrow-2 {
+/*1fr= fil availible space*/
+
+/*--------------------------------------------------------*/
+
+#contact-grid{
+	overflow: auto;
+	display: grid;
+	grid-template-columns: 22% 22% 22%;
+}
+
+#contact-cell-1{
+	min-width: 200px;
+	float: left;
+	padding: 10px;
+	margin: 0.5%;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 15px #6C6C6C;
+	background-color: #046BE4;
+}
+
+/*--------------------------------------------------------*/
+
+#col-narrow-1a {
+	float: left;/**/
+	width: 20%;
+	padding: 1%;
+	margin: 0.5%;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 2px #6C6C6C;
+	background-color: #75B9BE;
+}
+
+#col-narrow-1b {
+	float: left;/**/
+	width: 20%;
+	padding: 10px;
+	margin: 0.5%;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 2px #6C6C6C;
+	background-color: #046BE4;
+}
+
+#col-narrow-2a {
 	float: left;/**/
 	text-align: center;
 	width: 20%;
 	padding: 1%;
 	margin: 0.5%;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 2px #6C6C6C;
 	background-color: #52B771;
 }
 
-#col-narrow-3 {
+#col-narrow-2b {
 	float: left;/**/
 	text-align: center;
 	width: 20%;
 	padding: 1%;
 	margin: 0.5%;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 2px #6C6C6C;
 	background-color: #F7C13E;
 }
 
