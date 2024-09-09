@@ -2,7 +2,7 @@
 20 Min Tech Tutor site
 
 
-Septemebr Updates & Goals
+September Updates & Goals
 Goals:
 - Accessibility: The site is NOT screen reader friendly at the moment
 - Add Footer: BE withing reach of my contact info & Schedule button
