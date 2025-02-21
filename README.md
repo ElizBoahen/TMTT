@@ -2,13 +2,12 @@
 20 Min Tech Tutor site
 
 
-September Updates & Goals
+March Updates & Goals
 Goals:
-- Accessibility: The site is NOT screen reader friendly at the moment
-- Add Footer: BE withing reach of my contact info & Schedule button
-- Style: Make it look 10% better this month
+- ARIA
+- Add Footer: CTA & Contact Info.
+- Change to Rails
 
 Updates:
-- Offerings page added
-- Reactive hover links
-- Shadow added for contrast
+- Add Pricing
+- Add Feedback
