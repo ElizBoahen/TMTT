@@ -1,156 +1,75 @@
+/* Thank you StackOverflow & Andreas Wong*/
 .mycontainer {
 	overflow: auto;
 }
 
 /*-------- The Basics ----------*/
+h1 {
+    color: #000000;
+    text-shadow: 2px 0px 2px #777;
+}
+
 div {
 	margin: auto;
 	font-family: Verdana;
 	padding: 5%;
 }
 
-/* Thank you StackOverflow & Andreas Wong*/
+
+body {
+    font-family: Verdana, sans-serif;
+    padding: 10px;
+    display: flex;
+    margin: 0;
+    
+}
+
 a {
 	text-decoration: none;
-	color: white;
 }
 a:visited { text-decoration: none; color:none; }
-a:hover { text-decoration: none; color:blue; font-size:120%;}
+a:hover { text-decoration: none; color:blue; }
 a:focus { text-decoration: none; color:yellow; }
 a:hover, a:active { text-decoration: none; color:blue }
 a.home {
 	color: blue;
 }
 
-header {
-  background-color: #75B9BE;
-  font-family: Verdana;
-  padding: 10px;
-  text-align: center;
-  /*font-size: 30px;*/
-  color: #FFFFFF;
-  text-shadow: 2px 2px 2px #6C6C6C;
+/*------------------------------*/
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background-color: #75B9BE;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin: 15px 0;
 }
 
-body {
-	font-family: Verdana;
-	padding: 10px;
-	display: flex;
-	justify-content: center;
-}
-section {
-	align-items: center;
+.sidebar a{
+	text-decoration: none;
+	padding: 1px;
+	color: #000000;
+	display: block;
 }
 
-#new-grid{
-	overflow: auto;
-	display: grid;
-	grid-template-columns: 20% 20% 20%;
+.sidebar ul a:hover{
+	color: #f7c13e;
+	outline: 2px dotted #000000;
+	text-shadow: 2px 2px 2px #6C6C6C, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	padding: 3px;
+	font-size: 120%;
 }
 
-#offer-cell-1{
-	float: left;
-	padding: 10px;
-	margin: 0.5%;
-	color: #FFFFFF;
-	text-shadow: 2px 2px 15px #6C6C6C;
-	background-color: #A8CCC9;
+.content {
+    flex-grow: 1;
+    padding: 20px;
 }
-#offer-cell-2{
-	float: left;
-	padding: 10px;
-	margin: 0.5%;
-	color: #FFFFFF;
-	text-shadow: 2px 2px 15px #6C6C6C;
-	background-color: #A9DBB8;
-}
-#offer-cell-3{
-	float: left;
-	padding: 10px;
-	margin: 0.5%;
-	color: #FFFFFF;
-	text-shadow: 2px 2px 15px #6C6C6C;
-	background-color: #52B771;
-}
-#offer-cell-4{
-	float: left;
-	padding: 10px;
-	margin: 0.5%;
-	color: #FFFFFF;
-	text-shadow: 2px 2px 15px #6C6C6C;
-	background-color: #F7C13E;
-}
-#offer-cell-5{
-	float: left;
-	padding: 10px;
-	margin: 0.5%;
-	color: #FFFFFF;
-	text-shadow: 2px 2px 15px #6C6C6C;
-	background-color: #046BE4;
-}
-
-/*1fr= fil availible space*/
-
-/*--------------------------------------------------------*/
-
-#contact-grid{
-	overflow: auto;
-	display: grid;
-	grid-template-columns: 22% 22% 22%;
-}
-
-#contact-cell-1{
-	min-width: 200px;
-	float: left;
-	padding: 10px;
-	margin: 0.5%;
-	color: #FFFFFF;
-	text-shadow: 2px 2px 15px #6C6C6C;
-	background-color: #046BE4;
-}
-
-/*--------------------------------------------------------*/
-
-#col-narrow-1a {
-	float: left;/**/
-	width: 20%;
-	padding: 1%;
-	margin: 0.5%;
-	color: #FFFFFF;
-	text-shadow: 2px 2px 2px #6C6C6C;
-	background-color: #75B9BE;
-}
-
-#col-narrow-1b {
-	float: left;/**/
-	width: 20%;
-	padding: 10px;
-	margin: 0.5%;
-	color: #FFFFFF;
-	text-shadow: 2px 2px 2px #6C6C6C;
-	background-color: #046BE4;
-}
-
-#col-narrow-2a {
-	float: left;/**/
-	text-align: center;
-	width: 20%;
-	padding: 1%;
-	margin: 0.5%;
-	color: #FFFFFF;
-	text-shadow: 2px 2px 2px #6C6C6C;
-	background-color: #52B771;
-}
-
-#col-narrow-2b {
-	float: left;/**/
-	text-align: center;
-	width: 20%;
-	padding: 1%;
-	margin: 0.5%;
-	color: #FFFFFF;
-	text-shadow: 2px 2px 2px #6C6C6C;
-	background-color: #F7C13E;
-}
-
-
