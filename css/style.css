@@ -35,6 +35,9 @@ a.home {
 	color: blue;
 }
 
+section {
+	align-items: center;
+}
 /*------------------------------*/
 
 .sidebar {
@@ -72,4 +75,38 @@ a.home {
 .content {
     flex-grow: 1;
     padding: 20px;
+}
+
+/*-------------------------------*/
+
+#block-1 {
+	float: left;
+	width: 20%;
+	padding: 10px;
+	margin: 0.5%;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 2px #6C6C6C;
+	background-color: #046BE4;
+}
+
+#block-2 {
+	float: left;
+	text-align: center;
+	width: 20%;
+	padding: 1%;
+	margin: 0.5%;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 2px #6C6C6C;
+	background-color: #52B771;
+}
+
+#block-3 {
+	float: left;
+	text-align: center;
+	width: 20%;
+	padding: 1%;
+	margin: 0.5%;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 2px #6C6C6C;
+	background-color: #F7C13E;
 }
