@@ -1,0 +1,257 @@
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Veranda, sans-serif;
+  background: #fff;
+  color: #222;
+  display: flex;
+}
+
+/* ---------------- SIDEBAR ---------------- */
+
+.sidebar {
+  width: 360px; /* ← ADJUST SIDEBAR WIDTH HERE */
+  background: #DFF2E5;
+  height: 100vh;
+  padding: 1.5rem 1rem;
+  border-right: 1px solid #ccc;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  font-size: 1.15rem;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%);
+}
+
+.sidebar-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* MOBILE MENU BUTTON */
+.mobile-menu-button {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: #FFD700;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  z-index: 999;
+}
+
+.close-menu {
+  display: none;
+  background: #FFD700;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* CTA FORM */
+.cta-form {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cta-form textarea,
+.cta-form input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+}
+
+.contact-methods {
+  display: flex;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.form-success {
+  display: none;
+  margin-top: 0.5rem;
+  color: green;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* NAVIGATION */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nav-item {
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ccc;
+  transition: all 0.25s ease;
+}
+
+.nav-item:hover {
+  color: #FFD700;
+  border: 2px dotted #FFD700;
+  box-shadow: 0 0 12px #FFD700;
+}
+
+/* ---------------- MAIN CONTENT ---------------- */
+
+.content {
+  max-width: 1000px;
+  /*margin-left: calc(360px + 2rem); sidebar width + spacing */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  
+}
+
+
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.site-title {
+  font-size: 2.4rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* HERO */
+.hero {
+  margin-bottom: 3rem;
+}
+
+.hero-image-wrapper {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.hero-image {
+  width: 42%;
+  min-width: 260px;
+  height: auto;
+}
+
+/* TESTIMONIALS + NYC TEXT */
+.hero-text {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.testimonials-left {
+  flex: 1;
+}
+
+.testimonial {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.nyc-text {
+  flex: 1;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* LOWER SECTION */
+.lower-section {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.lower-image-wrapper {
+  flex: 0 0 35%;
+}
+
+.lower-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* FLOATING QUESTIONS */
+.floating-questions p {
+  color: #666;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.q-left {
+  text-align: left;
+}
+
+.q-right {
+  text-align: right;
+}
+
+.skills-text {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media (max-width: 900px) {
+
+  .mobile-menu-button {
+    display: block;
+  }
+
+  .close-menu {
+    display: block;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .content {
+    margin-left: 0;
+    padding-top: 4rem;
+  }
+
+  .hero-text {
+    flex-direction: column;
+  }
+
+  .lower-section {
+    flex-direction: column;
+  }
+}

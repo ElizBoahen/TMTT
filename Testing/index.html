@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>20 Min Tech Tutor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- MOBILE MENU BUTTON -->
+  <button class="mobile-menu-button">Menu</button>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <button class="close-menu">Close</button>
+
+    <div class="sidebar-logo">20 Min Tech Tutor</div>
+
+    <!-- CTA FORM -->
+    <form class="cta-form" id="ctaForm">
+      <label>
+        What do you want to learn?
+        <textarea name="goal" rows="2" required></textarea>
+      </label>
+
+      <label>
+        Email or Phone
+        <input type="text" name="contact" required />
+      </label>
+
+      <div class="contact-methods">
+        <label><input type="checkbox" name="method" value="call"> Call</label>
+        <label><input type="checkbox" name="method" value="text"> Text</label>
+        <label><input type="checkbox" name="method" value="email"> Email</label>
+      </div>
+
+      <button type="submit" class="btn-primary">Get Session Times</button>
+
+      <p class="form-success">Thank you! We will reach out to you soon.</p>
+    </form>
+
+    <!-- NAVIGATION -->
+    <nav class="sidebar-nav">
+      <a href="#hero" class="nav-item">Home</a>
+      <a href="schedule.html" class="nav-item">Schedule Appointment</a>
+      <a href="aboutu.html" class="nav-item">About Us</a>
+      <a href="contact.html" class="nav-item">Contact Us</a>
+      <a href="offerings.html" class="nav-item">Offerings</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+
+    <!-- HEADER -->
+    <header class="header">
+      <h1 class="site-title">20 Min Tech Tutor</h1>
+      <p class="tagline">Tech Help & Community Learning</p>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+
+      <!-- IMAGE A -->
+      <div class="hero-image-wrapper">
+        <img src="testing-assets/T_tmttlogo300.png" alt="Hero Image" class="hero-image" />
+      </div>
+
+      <!-- TESTIMONIALS + NYC TEXT -->
+      <div class="hero-text">
+        <div class="testimonials-left">
+          <p class="testimonial">“You are a blessing!”</p>
+          <p class="testimonial">“Wow, Thank you”</p>
+          <p class="testimonial">“I feel like I can do it.”</p>
+        </div>
+
+        <div class="nyc-text">
+          Adults across NYC have found support and confidence through 1‑on‑1 and group sessions.
+        </div>
+      </div>
+
+    </section>
+
+    <!-- LOWER SECTION -->
+    <section class="lower-section">
+
+      <!-- IMAGE B -->
+      <div class="lower-image-wrapper">
+        <img src="testing-assets/topic-collage.png" alt="Collage" class="lower-image" />
+      </div>
+
+      <!-- TEXT -->
+      <div class="lower-text">
+
+        <div class="floating-questions">
+          <p class="q-left">How do I use my smartphone?</p>
+          <p class="q-right">My email is full. What do I do?</p>
+          <p class="q-left">I want to design! Where do I start?</p>
+        </div>
+
+        <p class="skills-text">
+          Learn core computer skills like typing, Word, and emails.  
+          Tech skills like online saftey and security are important for daily life.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

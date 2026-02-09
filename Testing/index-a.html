@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Tech Tutor</title>
+  <link rel="stylesheet" href="style-a.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="logo">Quick<span>Tech</span>Tutor</div>
+      <nav class="nav">
+        <a href="#how-it-works">How it works</a>
+        <a href="#topics">Topics</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="btn btn-outline">Book a session</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Level up your tech skills in 20 minutes.</h1>
+          <p>
+            One-on-one, focused micro-sessions that cut through the noise.
+            Learn exactly what you need—no fluff, no jargon.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Book a 20‑minute session</a>
+            <button class="btn btn-ghost" id="play-intro">Watch 60‑second intro</button>
+          </div>
+          <div class="hero-meta">
+            <span>✔ Beginner‑friendly</span>
+            <span>✔ Screen‑sharing support</span>
+            <span>✔ Actionable follow‑up steps</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>Tell us what you want to learn</h2>
+          <form id="quick-form">
+            <label>
+              What’s your goal?
+              <textarea
+                name="goal"
+                rows="3"
+                placeholder="e.g., Learn how to use Excel for budgets, or set up a simple website."
+                required
+              ></textarea>
+            </label>
+            <label>
+              Experience level
+              <select name="level" required>
+                <option value="">Select one</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+              </select>
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <button type="submit" class="btn btn-primary btn-full">Request session times</button>
+            <p class="form-note">No spam. We’ll reply with 2–3 time options.</p>
+          </form>
+          <p class="form-success" id="form-success" hidden>
+            Thanks! We’ve recorded your request. Check your inbox shortly for available times.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works" class="section">
+      <div class="container">
+        <h2>How it works</h2>
+        <div class="steps">
+          <article class="step">
+            <div class="step-number">1</div>
+            <h3>Share your goal</h3>
+            <p>
+              Tell us what you want to accomplish in plain language—no technical terms needed.
+            </p>
+          </article>
+          <article class="step">
+            <div class="step-number">2</div>
+            <h3>Get matched with a tutor</h3>
+            <p>
+              We pair you with someone who actually uses that tool or skill in real life.
+            </p>
+          </article>
+          <article class="step">
+            <div class="step-number">3</div>
+            <h3>20 focused minutes</h3>
+            <p>
+              Live, one-on-one session with screen sharing, examples, and a simple checklist to keep.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Topics -->
+    <section id="topics" class="section section-alt">
+      <div class="container">
+        <h2>Popular 20‑minute topics</h2>
+        <div class="topics-grid">
+          <article class="topic-card">
+            <h3>Productivity & office tools</h3>
+            <ul>
+              <li>Excel basics & formulas</li>
+              <li>Google Sheets dashboards</li>
+              <li>PowerPoint that doesn’t look awful</li>
+            </ul>
+          </article>
+          <article class="topic-card">
+            <h3>Web & coding</h3>
+            <ul>
+              <li>HTML & CSS fundamentals</li>
+              <li>Debugging simple JavaScript</li>
+              <li>Understanding Git & GitHub</li>
+            </ul>
+          </article>
+          <article class="topic-card">
+            <h3>Everyday tech</h3>
+            <ul>
+              <li>Organizing files & backups</li>
+              <li>Email filters & inbox sanity</li>
+              <li>Password managers & security basics</li>
+            </ul>
+          </article>
+          <article class="topic-card">
+            <h3>Custom sessions</h3>
+            <ul>
+              <li>Walkthrough of a specific tool</li>
+              <li>Review your existing setup</li>
+              <li>“Ask me anything” tech Q&A</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <h2>Simple, transparent pricing</h2>
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <h3>Single session</h3>
+            <p class="price">$29</p>
+            <p>One 20‑minute, focused session.</p>
+            <ul>
+              <li>One topic</li>
+              <li>Action checklist</li>
+              <li>Email recap</li>
+            </ul>
+          </article>
+          <article class="pricing-card pricing-card-featured">
+            <div class="badge">Most popular</div>
+            <h3>3‑session bundle</h3>
+            <p class="price">$75</p>
+            <p>Three sessions you can use anytime.</p>
+            <ul>
+              <li>Mix & match topics</li>
+              <li>Short homework between calls</li>
+              <li>Priority scheduling</li>
+            </ul>
+          </article>
+          <article class="pricing-card">
+            <h3>Team training</h3>
+            <p class="price">Custom</p>
+            <p>Short, focused sessions for small teams.</p>
+            <ul>
+              <li>Up to 10 people</li>
+              <li>Recorded sessions</li>
+              <li>Custom curriculum</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / booking -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact-grid">
+        <div>
+          <h2>Ready to book a session?</h2>
+          <p>
+            Share a bit about what you’d like to learn and when you’re usually available.
+            We’ll reply with a short list of time slots and a payment link.
+          </p>
+          <ul class="contact-highlights">
+            <li><strong>Format:</strong> Zoom or Google Meet</li>
+            <li><strong>Location:</strong> Anywhere, fully remote</li>
+            <li><strong>Support:</strong> Follow‑up questions by email</li>
+          </ul>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Time zone
+            <input type="text" name="timezone" placeholder="e.g., EST, PST, GMT+1" />
+          </label>
+          <label>
+            What would you like to cover?
+            <textarea
+              name="details"
+              rows="4"
+              placeholder="Share your goals, tools you use, and preferred days/times."
+              required
+            ></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-full">Send request</button>
+          <p class="form-note">We usually respond within one business day.</p>
+          <p class="form-success" id="contact-success" hidden>
+            Got it! Your request has been recorded. We’ll email you soon with next steps.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> QuickTechTutor. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#how-it-works">How it works</a>
+        <a href="#topics">Topics</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Simple modal for intro video -->
+  <div class="modal" id="intro-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="intro-title">
+      <button class="modal-close" aria-label="Close" data-close-modal>&times;</button>
+      <h2 id="intro-title">Quick overview</h2>
+      <p>
+        Imagine a short, focused call where you share your screen, explain your goal, and walk away
+        with a clear next step. That’s what every 20‑minute session is designed to do.
+      </p>
+      <p>
+        You can embed a real video here later (YouTube, Loom, etc.). For now, this is just a
+        placeholder modal.
+      </p>
+    </div>
+  </div>
+
+  <script src="script-a.js"></script>
+</body>
+</html>
