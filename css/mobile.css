@@ -1,0 +1,96 @@
+/* ---- The Basics---------------- */
+* {
+  max-width: 100%;
+}
+
+body, .content, .page-wrapper {
+  display: block;
+}
+
+/* ---- Mobile Menu---- */
+.mobile-menu-button {
+  display: block;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: #FFD700;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  z-index: 999;
+}
+
+.close-menu {
+  display: block;
+  background: #9FD0AE;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.sidebar {  /* <--- Hides Navbar / Side Bar by default  */
+  transform: translateX(-100%);
+  z-index: 1000;
+}
+
+.sidebar.show {
+  transform: translateX(0);
+}
+
+.sidebar.show ~ .mobile-menu-button {
+  display: none;
+}
+
+/* ---- Page Wrapper ---- */
+.page-wrapper {
+  margin-left: 0;
+  width: 100%;
+}
+
+.content {
+  padding-top: 4rem;
+}
+
+/* ---- Section 2: Hero ---- */
+.s2-text {
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 1.1rem;
+}
+
+/* ---- Section 3: Topics ---- */
+.s3-topics {
+  flex-direction: column;
+  padding: 0.8rem;
+}
+
+.s3-topic-image-wrapper {   /* <--- makes Image 1st on mobile */
+  order: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  padding-bottom: 1.1rem;
+}
+.s3-topic-image {
+  max-width: 82%;
+  height: auto;
+  display: block;
+}
+
+.s3-topic-text-order {
+  order: 2;
+  text-align: center;
+}
+
+.s3-floating-qs li {
+  display: block;
+  margin: 0.6rem auto;
+}
+
+.s3-tech-topics-text {
+  padding: 1rem 0;
+  font-size: 1.3rem;
+}

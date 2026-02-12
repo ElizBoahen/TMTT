@@ -1,0 +1,366 @@
+/* ---- The Basics---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  background: #FFFFFF;
+  color: #222222;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ---- Navbar / Side Bar ------ */
+.sidebar {
+  width: 360px;
+  background: #DFF2E5;
+  height: 100vh;
+  padding: 1.5rem 1rem;
+  border-right: 1px solid #ccc;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  font-size: 1.15rem;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.sidebar-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: "Marko One", serif;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* ---- Mobile Menu ---- */
+.mobile-menu-button,
+.close-menu {
+  display: none;
+}
+
+/* ---- CTA Form ---- */
+.cta-form {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem; /* gap */
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 180px;
+  resize: vertical;
+  overflow-y: auto;
+  transition: height 0.2s ease;
+}
+
+
+.cta-form textarea,
+.cta-form input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem; /* gap */
+  font-size: 1rem;
+}
+
+.contact-methods label {
+  margin-right: 2rem;
+}
+
+.cta-form .submit-btn {
+  background: #52B771;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.75rem 0.8rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  width: 100px;
+  display: inline-block;
+  margin: 0.5rem auto;
+
+  transition: all 0.25s ease;
+}
+
+.cta-form .submit-btn:hover {
+  background: #FFD700; 
+  color: #333333;
+  box-shadow: 0 0 12px #FFD700;
+}
+
+.cta-form .submit-btn:active {
+  background: #FFD700;
+  transform: scale(0.97);
+}
+
+.form-success {
+  display: none;
+  margin-top: 0.5rem;
+  color: green;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* ---- General Nav Design ---- */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;  /* gap */
+}
+
+.nav-item {
+  padding: 0.75rem 1rem;
+  background: #FFFFFF;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333333;
+  border: 1px solid #9ED8B1;
+  transition: all 0.25s ease;
+}
+
+.nav-item:hover {
+  background: #F8C134;
+  border: 3px dotted #F8C134;
+  box-shadow: 0 0 12px #F8C134;
+}
+
+.sidebar-footer {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #9ED8B1;
+  text-align: center;
+}
+/* ---- Page Wrapper & Content ---- */
+.page-wrapper {
+  margin-left: 360px;
+  width: calc(100% - 360px);
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  max-width: 1000px;
+  width: 100%;
+  padding: 2rem;
+}
+/* ---- HOME PAGE ---- */
+/* -- Header -- */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.site-title {
+  font-size: 2.4rem;
+  font-family: "Marko One", serif;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* -- Section 1: Hero -- */
+.s1-hero {
+  margin-bottom: 5rem;
+}
+
+.s1-hero-image-wrapper {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.s1-hero-image {
+  width: 42%;
+  min-width: 15rem;
+  height: auto;
+}
+
+/* -- Section 2: Testimonials -- */
+.s2-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.s2-testimonials {
+  flex: 1;
+}
+
+.testimonial {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.s2-across-nyc {
+  flex: 1;
+  color: #333333;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* -- Section 3: Topics -- */
+.s3-topics {
+  display: flex;
+  padding: 2rem; /* gap */
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.s3-topic-image-wrapper {
+  flex: 0 0 35%;
+}
+
+.s3-topic-image {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+
+/* Home Pg, Float Qs */
+.s3-floating-qs {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.s3-floating-qs li {
+  color: #698D75;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+
+  text-shadow: 0 3px 8px rgba(62, 90, 72, 0.3); /* <-- Txt bg blurr */
+}
+
+/* Home Pg, Bottom Text */
+.s3-tech-topics-text {
+  margin-top: 0.2rem;
+  padding: 2rem;
+  color: #333333;
+  font-size: 1.6rem;
+}
+
+/*---- OFFERINGS PAGE ----*/
+/*-- Section1: How It Works --*/
+.s1-how {
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+.s1-how p,
+.s1-how li,
+.s1-how h2 {
+  margin-bottom: 0.6rem;
+}
+
+/*---- ABOUT PAGE ----*/
+/*-- Section1: How It Works --*/
+.s1-i-want-to {
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+/*.s1-the-goal p:not(.s1-i-want-to) {*/
+.s1-the-goal {
+  margin-left: 8rem;
+}
+
+/* Circles */
+.apg-decor-container-1 {
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+
+.apg-decor-container-2 {
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+.about-decor-1 {
+  position: relative;
+}
+
+.about-circ {
+  position: absolute;
+  border-radius: 50%;
+  background: #E0F2E5;
+}
+
+.about-circ.c1 {
+  width: 2.05rem;
+  height: 2.05rem;
+  top: 10px;
+  left: 40%;
+}
+
+.about-circ.c2 {
+  width: 3rem;
+  height: 3rem;
+  top: 0px;
+  left: 50%;
+}
+
+.about-circ.c3 {
+  width: 2.05rem;
+  height: 2.05rem;
+  top: 20px;
+  left: 60%;
+}
+
+.about-circ.c4 {
+  width: 2.063rem;
+  height: 2.063rem;
+  top: -11rem;
+  left: 1rem;
+}
+
+.about-circ.c5 {
+  width: 7.07rem;
+  height: 7.07rem;
+  top: 5rem;
+  left:2rem;/*calc(100%-8rem);*/
+}
+
+/*---- CONTACT PAGE ----*/
+/*-- Section1: Contact Info --*/
+.s1-contact {
+  font-size: 1rem;
+  padding: 2rem;
+}
+
+.s1-contact h1 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+  width: 30rem;
+}
