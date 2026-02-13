@@ -281,6 +281,18 @@ textarea {
 .s2-catalog {
 
 }
+.s2-catalog h1 {
+  margin-bottom: 2rem;
+}
+
+.s2-catalog h2 {
+  margin-bottom: 1rem;
+}
+
+.s2-catalog p,
+.s2-catalog li {
+  margin-bottom: 0.5rem;
+}
 
 /*---- ABOUT PAGE ----*/
 /*-- Section1: How It Works --*/
