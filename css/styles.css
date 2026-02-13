@@ -31,7 +31,6 @@ body {
 
 .sidebar-logo {
   font-size: 1.6rem;
-  font-weight: bold;
   font-family: "Marko One", serif;
   text-align: center;
   margin-bottom: 1.5rem;
@@ -211,7 +210,7 @@ textarea {
   font-style: italic;
   margin-bottom: 0.5rem;
   color: #698D75;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: 0.3rem 0.6rem;
 
   text-shadow: 0 3px 8px rgba(62, 90, 72, 0.3); /* <-- Txt bg blurr */
@@ -270,29 +269,73 @@ textarea {
 
 /*---- OFFERINGS PAGE ----*/
 /*-- Section1: How It Works --*/
-.s1-how {
+.s1-offerings {
   margin-bottom: 1rem;
   padding: 2rem;
 }
-.s1-how p,
-.s1-how li,
-.s1-how h2 {
+.s1-offerings p,
+.s1-offerings li,
+.s1-offerings h2 {
   margin-bottom: 0.6rem;
+}
+.s2-offerings {
+  
 }
 
 /*---- ABOUT PAGE ----*/
 /*-- Section1: How It Works --*/
-.s1-i-want-to {
+/*.s1-the-goal p:not(.s1-i-want-to) {*/
+.s1-the-goal {
+  margin-left: 8rem;
+}
+
+.s1-the-goal h1 {
   font-size: 1.5rem;
   margin-top: 5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.1rem;
   padding: 2rem;
   text-align: center;
 }
 
-/*.s1-the-goal p:not(.s1-i-want-to) {*/
-.s1-the-goal {
-  margin-left: 8rem;
+.s2-the-who {
+  margin-top: 4rem;
+  margin-left: 10rem;
+}
+.s2-the-who h1{
+  margin-left: 2rem;
+  font-size: 1.7rem;
+  margin-bottom: 1.8rem;
+}
+
+.s2-the-who h2{
+  margin-left: 3rem;
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-bottom: 1.8rem;
+}
+
+.s2-the-who ul {
+  margin-left: 3rem;
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+}
+
+.s3-the-why {
+  margin-top: 3.5rem;
+  margin-left: 1rem;
+}
+
+.s3-the-why h1{
+  margin-left: 2rem;
+  font-size: 1.7rem;
+  margin-bottom: 0.8rem;
+}
+
+.s3-the-why h2{
+  margin-left: 3rem;
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-bottom: 1.8rem;
 }
 
 /* Circles */
@@ -348,7 +391,7 @@ textarea {
 .about-circ.c5 {
   width: 7.07rem;
   height: 7.07rem;
-  top: 5rem;
+  top: 2.5rem;
   left:2rem;/*calc(100%-8rem);*/
 }
 
@@ -368,4 +411,10 @@ textarea {
   align-items: center;
   text-align: center;
   width: 30rem;
+}
+
+
+/*---- EXTRAS ----*/
+.inject-brand-font {
+  font-family: "Marko One", serif;
 }

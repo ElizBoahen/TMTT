@@ -54,6 +54,7 @@ body, .content, .page-wrapper {
   padding-top: 4rem;
 }
 
+/* ---- HOME PAGE ---- */
 /* ---- Section 2: Hero ---- */
 .s2-text {
   flex-direction: column;
@@ -94,3 +95,61 @@ body, .content, .page-wrapper {
   padding: 1rem 0;
   font-size: 1.3rem;
 }
+
+/*---- ABOUT PAGE ----*/
+/*-- Section1: How It Works --*/
+/*.s1-the-goal p:not(.s1-i-want-to) {*/
+.s1-the-goal {
+  margin-left: 8rem;
+}
+
+.s1-the-goal h1 {
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  margin-bottom: 0.1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.s2-the-who {
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+.s2-the-who h1{
+  margin-left: 8rem;
+  margin-bottom: 1.5rem;
+}
+
+.s2-the-who h2{
+  margin-left: 9.5rem;
+  margin-bottom: 1.8rem;
+}
+
+.about-circ.c1 {
+  width: 2.05rem;
+  height: 2.05rem;
+  top: 10px;
+  left: 30%;
+}
+
+.about-circ.c2 {
+  width: 3rem;
+  height: 3rem;
+  top: 0px;
+  left: 50%;
+}
+
+.about-circ.c3 {
+  width: 2.05rem;
+  height: 2.05rem;
+  top: 20px;
+  left: 70%;
+}
+
+.about-circ.c4 {
+  width: 2.063rem;
+  height: 2.063rem;
+  top: -11rem;
+  left: 1rem;
+}
+
