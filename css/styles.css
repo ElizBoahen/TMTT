@@ -267,19 +267,19 @@ textarea {
   font-size: 1.6rem;
 }
 
-/*---- OFFERINGS PAGE ----*/
+/*---- CATALOG PAGE ----*/
 /*-- Section1: How It Works --*/
-.s1-offerings {
+.s1-catalog {
   margin-bottom: 1rem;
   padding: 2rem;
 }
-.s1-offerings p,
-.s1-offerings li,
-.s1-offerings h2 {
+.s1-catalog p,
+.s1-catalog li,
+.s1-catalog h2 {
   margin-bottom: 0.6rem;
 }
-.s2-offerings {
-  
+.s2-catalog {
+
 }
 
 /*---- ABOUT PAGE ----*/
