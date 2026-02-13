@@ -210,6 +210,11 @@ textarea {
 .testimonial {
   font-style: italic;
   margin-bottom: 0.5rem;
+  color: #698D75;
+  font-size: 1.3rem;
+  padding: 0.3rem 0.6rem;
+
+  text-shadow: 0 3px 8px rgba(62, 90, 72, 0.3); /* <-- Txt bg blurr */
 }
 
 .s2-across-nyc {
